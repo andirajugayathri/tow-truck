@@ -141,6 +141,9 @@ p {
     gap: 8px;
     z-index: 10;
   }
+  .navbar-collapse {
+    padding-bottom: 20px;
+  }
 
 
   .navbar-brand img {
