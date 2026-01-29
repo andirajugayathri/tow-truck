@@ -867,9 +867,9 @@ p {
     text-align: center;
   }
 
-  .first-row {
+  /* .first-row {
     margin-bottom: 30px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -879,15 +879,16 @@ p {
 
   .feature-card {
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    height: 85%;
   }
 
   .insurance-section {
-    padding: 60px 0;
+    padding-top: 60px;
   }
 
   .why-choose-cards {
-    gap: 30px;
+    gap: 0px;
     margin-top: 0;
   }
 }
@@ -902,7 +903,7 @@ p {
   }
 
   .insurance-section {
-    padding: 40px 0;
+    padding-top: 40px;
   }
 }
 
