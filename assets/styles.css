@@ -30,7 +30,7 @@ p {
 }
 
 .navbar-nav .nav-link {
-  color: #6c757d;
+  color: #0b0b0b;
   font-weight: 500;
   margin: 0 15px;
   font-family: "Poppins";
@@ -63,17 +63,17 @@ p {
 }
 
 .phone-numbers {
-  color: #646464;
+  color: #0b0b0b;
   text-decoration: none;
 }
 
 .email-link {
-  color: #646464;
+  color: #0b0b0b;
   text-decoration: none;
 }
 
 .email-link:hover {
-  color: #646464;
+  color: #0b0b0b;
   text-decoration: none;
 }
 
@@ -109,6 +109,10 @@ p {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
   .contact-info {
     display: flex;
     flex-direction: row;
@@ -118,25 +122,32 @@ p {
     margin-top: 15px;
     margin-bottom: 10px;
   }
+  .navbar {
+    padding: 0;
+  }
 
   .mobile-nav-number {
-    display: block;
+    display: flex;
     font-weight: 700;
     color: #0b0b0b;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: absolute;
     text-decoration: none;
-    left: 54%;
-    transform: translateX(-50%);
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, -50%);
     white-space: nowrap;
     align-items: center;
     gap: 8px;
+    z-index: 10;
   }
 
 
   .navbar-brand img {
-    max-height: 60px;
+    max-height: 50px;
     height: auto;
+    margin-top: 0;
+    position: relative;
   }
 
   .navbar-nav {
@@ -1663,7 +1674,7 @@ p {
 }
 
 .fhp-contact-info-content p {
-  color: #5a7779;
+  color: #0b0b0b;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -1672,7 +1683,7 @@ p {
 
 .fhp-contactno {
   text-decoration: none;
-  color: #5a7779;
+  color: #0b0b0b;
 }
 
 .fhp-form-control {
@@ -2899,11 +2910,12 @@ legend {
 
 .summary-card .quick-summary-list li {
   font-size: 16px;
-  color: #333333;
+  color: #0b0b0b;
   line-height: 1.6;
 }
+
 @media (max-width: 778px) {
   .summary-card {
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   }
 }
