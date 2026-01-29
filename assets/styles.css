@@ -1,0 +1,2905 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 0;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar-brand img {
+  max-height: 100px;
+  height: auto;
+  background-color: white;
+  padding: 8px;
+  margin-top: -28px;
+  position: absolute;
+  z-index: 2;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #6c757d;
+  font-weight: 500;
+  margin: 0 15px;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  gap: 8px;
+}
+
+.mobile-nav-number {
+  display: none;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-info .fa-phone {
+  color: #ff7200;
+}
+
+.phone-numbers {
+  color: #646464;
+  text-decoration: none;
+}
+
+.email-link {
+  color: #646464;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #646464;
+  text-decoration: none;
+}
+
+.contact-info .fa-envelope {
+  color: #ff7200;
+}
+
+.btn-get-quotes {
+  background-color: #ff7200;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-get-quotes:hover {
+  background-color: #e55a2b;
+  color: white;
+}
+
+.divider {
+  color: #013469;
+  margin: 0 15px;
+  font-size: 25px;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* spacing between items */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-nav-number {
+    display: block;
+    font-weight: 700;
+    color: #0b0b0b;
+    font-size: 1.1rem;
+    position: absolute;
+    text-decoration: none;
+    left: 54%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    align-items: center;
+    gap: 8px;
+  }
+
+
+  .navbar-brand img {
+    max-height: 60px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .btn-get-quotes {
+    margin-left: 0 !important;
+  }
+
+  .btn-get-quotes {
+    font-size: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+    margin-bottom: 0 !important;
+  }
+
+  .contact-section {
+    gap: 0px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .navbar-nav {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .contact-section {
+    gap: 10px;
+    margin-bottom: 20px !important;
+    margin-left: 18px !important;
+  }
+
+  .btn-get-quotes {
+    font-size: 16px;
+    margin-left: 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+  }
+
+  .contact-section {
+    gap: 0px !important;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .navbar-expand-lg .navbar-collapse {
+    min-width: 95%;
+  }
+
+  .btn-get-quotes {
+    margin-right: 38px;
+    padding: 10px;
+  }
+
+  .navbar {
+    font-size: 14px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .navbar-brand img {
+    max-height: 30px;
+    height: auto;
+  }
+
+  .towtrk-hero-description {
+    margin-left: 0px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .towtrk-hero-description {
+    margin-left: 0 !important;
+  }
+}
+
+/* Footer*/
+.footer {
+  background-image: url("./images/footer-bg-min.webp");
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: 60px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(4, 41, 80, 0.8);
+  z-index: -1;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo .logo-placeholder {
+  width: 230px;
+  height: 118px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo .logo-placeholder img {
+  width: 122.74px;
+  height: 100px;
+}
+
+.footer-description {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: #ff7200;
+  border: 2px solid #ff7200;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #ff7200;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: "Inter";
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #ff7200;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.footer-links i {
+  color: #ff7200;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff7200;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #ff7200;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact-icon i {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  color: #ff7200;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Poppins";
+  margin-bottom: 5px;
+}
+
+.contact-value {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #ff7200;
+  padding: 20px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 0;
+  }
+
+  .footer-title {
+    margin-top: 30px;
+  }
+
+  .footer-title:first-child {
+    margin-top: 0;
+  }
+
+  .social-links {
+    /* justify-content: center; */
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-right: 60px;
+  }
+
+  .divider {
+    display: none !important;
+  }
+}
+
+/* Tow-Truck-Insurance */
+.Tow-Truck-Insurance {
+  padding: 40px;
+}
+
+.section-titles {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ff7200;
+  font-family: "Inter";
+}
+
+.section-subtitles {
+  color: #013469;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 28px;
+}
+
+.description {
+  font-size: 16px;
+  color: #0b0b0b;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins";
+}
+
+.coverage-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #0b0b0b;
+}
+
+.coverage-icon {
+  width: 28px;
+  height: 28px;
+  background-color: #ff7200;
+  border-radius: 50%;
+  display: flex;
+  color: #ffff;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.coverage-icon::after {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.note-box {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: "Anybody";
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.note-box strong {
+  color: #ff7200;
+  font-family: "Inter";
+}
+
+.coverage-columns {
+  margin-top: 2rem;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.tow-truck-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+  padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .section-titles {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section-subtitles {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .coverage-item {
+    font-size: 1rem;
+  }
+
+  .note-box {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .content-section {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Tow-Truck-Insurance {
+    padding: 40px 0;
+  }
+
+  .section-titles {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitles {
+    font-size: 1.3rem;
+  }
+}
+
+/* Call to action section */
+.call-us {
+  padding: 0 40px;
+  margin-top: -100px;
+}
+
+.cta-section {
+  background: linear-gradient(135deg,
+      rgba(30, 60, 114, 0.9) 0%,
+      rgba(42, 82, 152, 0.9) 100%),
+    url("./images/tow-truck-operator-min.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 3rem;
+  color: white;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-content h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins";
+}
+
+.cta-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.cta-phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.contact-no {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.phone-icon {
+  width: 66px;
+  height: 66px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  color: #1dc707;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .cta-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insurance-card {
+    padding: 1.5rem 1rem;
+    height: 260px;
+  }
+
+  .cards-carousel {
+    margin: 0;
+  }
+
+  .why-insurance-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .call-us {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .cta-phone {
+    font-size: 26px;
+  }
+
+  .phone-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .insurance-card {
+    height: 240px;
+    padding: 1.25rem 0.75rem;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+/*Why choose professional tow truck insurance? */
+.insurance-section {
+  padding-top: 50px;
+  background-color: #fff1e5;
+}
+
+.main-title {
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 40px;
+  /* line-height: 40px; */
+  color: #ff7200;
+  font-family: "Inter";
+}
+
+.main-subtitle {
+  color: #7f8c8d;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  height: 80%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.feature-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.icon-box {
+  width: 66px;
+  height: 66px;
+  border: 1px dashed #013469;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-box img {
+  width: 55px;
+  height: auto;
+  fill: #ff7200;
+}
+
+.feature-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #013469;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  font-family: "Inter";
+}
+
+.feature-description {
+  color: #0b0b0b;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+}
+
+.arrow-icon {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #ff7200, #ff8c42);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.arrow-icon img {
+  margin: -57px 15px 0px 0px;
+  width: 34px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 50px;
+}
+
+/* .why-choose-cards {
+  margin-top: 30px;
+} */
+
+@media (max-width: 1200px) {
+  .main-title {
+    font-size: 2.8rem;
+  }
+
+  .title-section {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .main-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .title-section {
+    padding-right: 0;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .first-row {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .feature-card {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+
+  .insurance-section {
+    padding: 60px 0;
+  }
+
+  .why-choose-cards {
+    gap: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-title {
+    font-size: 1.2rem;
+  }
+
+  .insurance-section {
+    padding: 40px 0;
+  }
+}
+
+/* testimonials */
+.testimonials {
+  padding: 30px;
+}
+
+.testimonials-section {
+  background: linear-gradient(135deg,
+      rgba(30, 60, 114, 0.9) 0%,
+      rgba(42, 82, 152, 0.9) 100%),
+    url("./images/tow-truck-operator-min.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0px 50px 0px;
+  border-radius: 30px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.testi-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonials-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top left,
+      rgba(255, 107, 53, 0.1) 0%,
+      transparent 50%),
+    radial-gradient(ellipse at bottom right,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 50%),
+    linear-gradient(45deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.02) 50%,
+      transparent 100%);
+  pointer-events: none;
+}
+
+.testimonials-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 30%,
+      rgba(255, 107, 53, 0.08) 0%,
+      transparent 40%),
+    radial-gradient(circle at 80% 70%,
+      rgba(42, 82, 152, 0.15) 0%,
+      transparent 40%),
+    linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.03) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.testimonials-header {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-icon {
+  background: #ff7200;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonials-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Inter";
+}
+
+.testimonials-title .orange-text {
+  color: #ff7200;
+  font-weight: 700;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  border-top: 1px solid #ffffff26;
+  border-bottom: 1px solid #ffffff26;
+}
+
+.rating-number {
+  font-size: 44px;
+  font-weight: 600;
+  color: #ff7200;
+  font-family: "Inter";
+}
+
+.rating-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rating-stars {
+  color: #f3a71a;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.rating-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.carousel-container {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quote-icon {
+  color: #ff7200;
+  font-size: 24px;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 22px;
+  color: #013469;
+  font-family: "Inter";
+}
+
+.testimonial-stars {
+  color: #f3a71a;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #0b0b0b;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 26.56px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.author-avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-image: url("./images/avatar-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #013469;
+  font-size: 20px;
+  font-family: "Inter";
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.carousel-control-custom {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ff7200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-control-custom:hover {
+  background: #ff7200;
+  border-color: #ff7200;
+  color: white;
+  transform: scale(1.05);
+}
+
+.carousel-control-custom.active {
+  background: #ff7200;
+  border-color: #ff7200;
+  color: #ffff;
+}
+
+.carousel-item {
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .rating-section {
+    justify-content: center;
+  }
+
+  .testi-title {
+    justify-content: center;
+  }
+
+  .rating-number {
+    font-size: 2.5rem;
+  }
+
+  .testimonial-card {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-controls {
+    position: relative;
+    bottom: auto;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .company-name {
+    font-size: 15px;
+  }
+
+  .author-name {
+    font-size: 16px;
+  }
+
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item .row .col-12:nth-child(2) {
+    display: none;
+  }
+
+  .cta-content h3 {
+    font-size: 26px !important;
+  }
+
+  .carousel-item {
+    padding: 0;
+  }
+
+  .testimonial-card {
+    margin: 0;
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .testimonial-card {
+    margin-top: 23px;
+  }
+
+  .carousel-control-custom {
+    margin-bottom: 30px;
+  }
+
+  .towtrk-card {
+    height: 350px;
+    padding: 30px 25px;
+  }
+
+  .banner-content {
+    margin-left: 0 !important;
+  }
+
+  .section-titles {
+    font-size: 33px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .section-subtitles {
+    font-size: 22px;
+  }
+
+  .coverage-item {
+    font-size: 16px;
+  }
+
+  .note-box {
+    font-size: 16px;
+  }
+}
+
+/* faq */
+
+.text-orange {
+  color: #ff7200;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-button {
+  font-weight: 500;
+  color: #0b0b0b;
+  font-family: "Poppins";
+  font-size: 16px;
+  background-color: white;
+  box-shadow: none !important;
+  padding: 1rem 1.5rem;
+  border-radius: 50px !important;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #013469;
+  color: #fff !important;
+}
+
+.accordion-button:not(.collapsed) {
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 11.354a.5.5 0 0 0 .708 0L8 5.707l5.646 5.647a.5.5 0 0 0 .708-.708l-6-6a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 0 .708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: none;
+}
+
+.accordion-body {
+  background-color: #fff;
+  border-bottom: 1px solid #dddddd;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 1rem 2rem;
+}
+
+.accordion-body p {
+  border-left: 2px solid #013469;
+  padding-left: 10px;
+  color: #0b0b0b;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.faq-icon {
+  background-color: #013469;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.faq-icon i {
+  transform: rotate(330deg);
+}
+
+.accordion-button:not(.collapsed) .faq-icon {
+  background-color: #fff;
+  color: #0a2d4d;
+}
+
+.accordion-button:not(.collapsed) .faq-icon i {
+  transform: rotate(0deg);
+}
+
+.accordion-item {
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+
+.truck-insurance-quote {
+  padding: 60px 40px 40px 40px;
+}
+
+.quote-heading {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #ff6b00;
+  margin-bottom: 25px;
+  font-family: "Inter";
+}
+
+.quote-section {
+  background-color: #fff1e5;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 11.6px 0px #00000080;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 18px;
+  color: #013469;
+  font-family: "Inter";
+}
+
+.labels {
+  font-weight: 600;
+}
+
+.required {
+  color: red;
+  margin-left: 2px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 15px;
+  padding: 10px 10px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FF7200' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  display: block;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ff6b00;
+  box-shadow: 0 0 4px rgba(255, 107, 0, 0.4);
+}
+
+.orange-border {
+  border: 2px solid #ff6b00 !important;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 18px;
+  margin: 20px 0px 30px 0px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #e55d00;
+}
+
+@media (max-width: 768px) {
+  .quote-section {
+    padding: 10px;
+  }
+
+  .form-row {
+    margin-bottom: 0;
+  }
+
+  .truck-insurance-quote {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .faq-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .faq-icon i {
+    font-size: 12px;
+  }
+
+  .quote-heading {
+    font-size: 28px;
+  }
+
+  .form-control,
+  .form-select {
+    margin-bottom: 15px;
+  }
+}
+
+/* ===== Contact Section ===== */
+.banner-sections {
+  position: relative;
+  max-height: 700px;
+  min-height: 550px;
+  width: 100%;
+  background-image: url("./images/contact-us-banner5.webp");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.banner-sections::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.main-heading {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.breadcrumb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb-home {
+  color: #ff7200;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Poppins";
+}
+
+.breadcrumb-arrow {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.breadcrumb-current {
+  color: #fff;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+@media (max-width: 1200px) {
+  .main-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-heading {
+    font-size: 2.2rem;
+  }
+
+  .breadcrumb-home,
+  .breadcrumb-current {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .breadcrumb-home,
+  .breadcrumb-current {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .breadcrumb-home,
+  .breadcrumb-current {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .breadcrumb-home,
+  .breadcrumb-current {
+    font-size: 14px;
+  }
+}
+
+.fhp-contact-section {
+  background-color: #ecf8f8;
+  padding: 50px 0px;
+  margin: 30px 0px;
+}
+
+.fhp-contact-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  font-weight: 500;
+  color: #f80208;
+  margin-bottom: 26px;
+}
+
+.fhp-heading-main {
+  color: #013469;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Inter";
+}
+
+.fhp-heading-sub {
+  color: #013469;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.fhp-section-text {
+  color: #0b0b0b;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 30px;
+  line-height: 26.5px;
+  border-bottom: 1px solid #0b0b0b;
+  font-family: "Poppins";
+}
+
+.fhp-contact-information {
+  margin-top: -56px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #0b0b0b;
+}
+
+.fhp-contact-form-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 37px 0px 48px 57px;
+}
+
+.fhp-contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: -21px;
+}
+
+.fhp-contact-icon {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fdebe3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7200;
+}
+
+.fhp-contact-info-content h5 {
+  color: #2d4b6e;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.fhp-contact-info-content p {
+  color: #5a7779;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  overflow-wrap: anywhere;
+}
+
+.fhp-contactno {
+  text-decoration: none;
+  color: #5a7779;
+}
+
+.fhp-form-control {
+  display: block;
+  width: 95%;
+  padding: 15px 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 28px;
+  border: 1px solid #e0e0e0;
+  font-family: "Poppins";
+}
+
+.fhp-form-control:focus {
+  box-shadow: none;
+  border-color: #2d4b6e;
+}
+
+.fhp-textarea {
+  border-radius: 20px;
+  min-height: 140px;
+}
+
+.fhp-input-icon {
+  position: relative;
+}
+
+.fhp-input-icon i {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff7200;
+}
+
+.messages {
+  padding-left: 20px;
+}
+
+.fhp-submit-btn {
+  background-color: #2a467b;
+  padding: 15px 25px;
+  border-radius: 40px;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.fhp-submit-btn:hover {
+  background-color: #5875ab;
+}
+
+/* Mobile Contact Bar */
+.fhp-mobile-contact-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .fhp-mobile-contact-bar {
+    display: flex !important;
+    gap: 1px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .fhp-contact-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #2a467b;
+    color: white;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .fhp-contact-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .fhp-contact-item span {
+    font-weight: 500;
+  }
+
+  .fhp-contact-form-card {
+    padding: 25px;
+  }
+}
+
+/* hero section */
+
+.banner-section {
+  position: relative;
+  min-height: 630px;
+  /*background-image: url("./images/Tow-Truck-Insurance.webp");*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.banner-content {
+  margin-left: 100px;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin-bottom: 225px;
+}
+
+.banner-badge {
+  background: #ffffff;
+  font-weight: 600;
+  font-size: 28px;
+  color: #ff7200;
+  font-family: "Telegraph", "Helvetica Neue", Arial, sans-serif;
+  padding: 8px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.banner-title {
+  color: #013469;
+  font-weight: 700;
+  font-family: "Telegraph", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.1;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.banner-subtitle {
+  color: #0b0b0b;
+  line-height: 1.6;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.btn-get-quote {
+  background: #ff7200;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 700;
+  padding: 10px 25px;
+  font-size: 21px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); */
+}
+
+.btn-get-quote:hover {
+  background: #ff7200;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.rqst-box {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-200%);
+  width: 250px;
+  height: 50px;
+  background-color: #ff7200;
+  border: 1px solid black;
+  text-align: center;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 90deg;
+  float: right;
+  margin-left: -70%;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    min-height: 400px;
+    background-image: url(images/Tow-Truck-Insurance-mb.webp);
+    padding: 40px 0;
+  }
+
+  .banner-sections {
+    min-height: 400px;
+    padding: 40px 0;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-get-quote {
+    padding: 12px 25px;
+    /* display: none; */
+    font-size: 15px;
+  }
+
+  .banner-content {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+  }
+
+  .rqst-box {
+    width: 232px;
+    font-size: 22px;
+  }
+
+  /* .ban-con{
+                text-align: center;
+                margin-top: 3rem;
+            } */
+}
+
+@media (max-width: 576px) {
+  .banner-section {
+    min-height: 350px;
+    padding: 30px 0;
+  }
+
+  .banner-sections {
+    min-height: 500px;
+    padding: 30px 0;
+  }
+
+  .banner-title {
+    font-size: 1.6rem;
+  }
+
+  .banner-badge {
+    font-size: 13px;
+    padding: 6px 16px;
+  }
+
+  .banner-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .btn-get-quote {
+    padding: 12px 24px;
+    /* display: none; */
+    font-size: 14px;
+  }
+
+  /* .ban-con{
+                text-align: center;
+                margin-top: 3rem;
+            } */
+}
+
+@media (max-width: 1200px) {
+  .banner-title {
+    font-size: 44px;
+  }
+
+  .banner-subtitle {
+    font-size: 18px;
+  }
+
+  .banner-badge {
+    font-size: 22px;
+    padding: 7px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .banner-subtitle {
+    font-size: 16px;
+  }
+
+  .banner-badge {
+    font-size: 18px;
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-subtitle {
+    font-size: 14px;
+  }
+
+  .banner-badge {
+    font-size: 15px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-title {
+    font-size: 22px;
+  }
+
+  .banner-subtitle {
+    font-size: 12px;
+  }
+
+  .banner-badge {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .banner-title {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+
+  .towtrk-card-text {
+    overflow: visible;
+    font-size: 0.9rem;
+  }
+
+  .towtrk-card-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  .banner-subtitle {
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+
+  .banner-badge {
+    font-size: 20px;
+    padding: 6px 16px;
+  }
+
+  .testimonials-title {
+    font-size: 35px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1360px) {
+  .banner-title {
+    font-size: 50px;
+    white-space: nowrap;
+  }
+
+  .testimonials-title {
+    font-size: 35px !important;
+  }
+
+  .towtrk-card-text {
+    overflow: visible;
+  }
+
+  .towtrk-card-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  .banner-subtitle {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+
+  .banner-badge {
+    font-size: 20px;
+    padding: 6px 16px;
+  }
+}
+
+@media (min-width: 1360px) and (max-width: 1400px) {
+  .banner-title {
+    font-size: 50px;
+    white-space: nowrap;
+  }
+
+  .towtrk-card-text {
+    overflow: visible;
+  }
+
+  .towtrk-card-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  .banner-subtitle {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+
+  .banner-badge {
+    font-size: 20px;
+    padding: 6px 16px;
+  }
+
+  .testimonials-title {
+    font-size: 35px !important;
+  }
+
+  .main-title {
+    font-size: 37px;
+  }
+
+  .towtrk-card {
+    height: 295px;
+  }
+}
+
+.towtrk-insurance-section {
+  background: linear-gradient(180deg, #ecf2f2 70%, #ecf2f2 100%);
+
+  padding: 60px 0;
+}
+
+.towtrk-hero-title {
+  color: #ff7200;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Inter";
+}
+
+.towtrk-hero-subtitle {
+  color: #0b0b0b;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+}
+
+.towtrk-hero-description {
+  padding-left: 70px;
+  margin-left: -36px;
+  color: #0b0b0b;
+  font-size: 18px;
+  line-height: 1.6;
+  border-left: 1px solid #c0c0c0;
+  margin-bottom: 50px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.towtrk-carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.towtrk-card {
+  background: #ecf2f2;
+  border-radius: 12px;
+  padding: 23px 30px;
+  border: none;
+  min-height: 280px;
+  height: 367px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 0.5px solid #dddddd;
+  margin: 0 15px;
+}
+
+.shadow-card {
+  box-shadow: 0px 3px 8px 0px #0000003d;
+  border: 1px solid #dddddd;
+}
+
+/* .towtrk-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        } */
+
+.towtrk-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed #3a5b94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: #fff8F3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ff7200;
+  transition: all 0.3s ease;
+}
+
+.benefit-icon i {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+}
+
+.towtrk-icon {
+  width: 40px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.towtrk-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.towtrk-card-title {
+  color: #013469;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Anybody";
+}
+
+.towtrk-card-text {
+  color: #0b0b0b;
+  font-size: 16px;
+  text-align: left;
+  flex-grow: 1;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.towtrk-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.towtrk-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.towtrk-indicator.active {
+  background-color: #2c5aa0;
+  transform: scale(1);
+}
+
+.towtrk-slides-wrapper {
+  overflow: hidden;
+  /*margin: 0 -15px;*/
+}
+
+.towtrk-slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.towtrk-slide {
+  min-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .towtrk-hero-title {
+    font-size: 2rem;
+  }
+
+  .towtrk-card-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  .towtrk-card-text {
+    overflow: visible;
+  }
+
+  .towtrk-card {
+    height: 370px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .towtrk-insurance-section {
+    padding: 40px 0;
+  }
+
+  .towtrk-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .towtrk-hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .towtrk-hero-description {
+    padding-left: 20px;
+    margin-left: 0;
+  }
+
+  .towtrk-slide {
+    gap: 0;
+  }
+
+  .towtrk-card {
+    height: 300px;
+    padding: 25px 20px;
+    margin: 0 10px;
+  }
+
+  .shadow-card {
+    box-shadow: 0px 3px 8px 0px #0000003d;
+    border: 1px solid #dddddd;
+  }
+
+  .towtrk-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .towtrk-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .towtrk-card-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .towtrk-card-text {
+    font-size: 0.8rem;
+  }
+}
+
+.towtrk-card {
+  border-radius: 16px;
+  padding: 25px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+}
+
+.towtrk-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #013469;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.towtrk-card-text {
+  font-size: 16px;
+  color: #0b0b0b;
+  font-family: "Poppins";
+  line-height: 1.5;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+@media (max-width: 992px) {
+  .towtrk-card {
+    height: auto;
+    padding: 20px 18px;
+  }
+
+  .towtrk-card-title {
+    font-size: 18px;
+  }
+
+  .towtrk-card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .towtrk-card {
+    height: auto;
+    padding: 18px 15px;
+  }
+
+  .towtrk-card-title {
+    font-size: 16px;
+  }
+
+  .towtrk-card-text {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+.towtrk-slide .col-md-4 {
+  display: flex;
+}
+
+.towtrk-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  overflow: hidden;
+}
+
+.towtrk-card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 992px) {
+  .towtrk-card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .towtrk-card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .towtrk-card {
+    height: auto;
+    padding: 15px;
+  }
+
+  .towtrk-card-title {
+    font-size: 16px;
+  }
+
+  .towtrk-card-text {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+legend {
+  font-size: 1.5rem !important;
+}
+
+/* New CSS for Redesigned Sections */
+
+/* Beautified Accordion (Essentials) */
+.accordion-item {
+  border: none;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.accordion-button {
+  background: #fff;
+  font-weight: 700;
+  color: #0b0b0b;
+  border-radius: 12px !important;
+  font-size: 16px;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  /* background: linear-gradient(135deg, #fff 0%, #fff8f3 100%); */
+  color: #ff7200;
+  box-shadow: 0 2px 10px rgba(255, 114, 0, 0.1) !important;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff7200'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  /* background: #fff8f3; */
+  padding: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.accordion-body ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 28px;
+  color: #0b0b0b;
+  font-size: 1.05rem;
+}
+
+.accordion-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.accordion-body ul li::marker {
+  content: "";
+}
+
+.accordion-body ul li::before {
+  content: '\f058';
+  /* Solid Check Circle */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #ff7200;
+  font-size: 1.1rem;
+}
+
+/* Who We Cover Section */
+.who-we-cover-section .section-title {
+  color: #003366;
+  font-weight: 700;
+}
+
+/* Factors That Affect Cost Section */
+.factors-section {
+  background-color: #f9f9f9;
+}
+
+.number-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding-left: 0;
+}
+
+.number-list li {
+  counter-increment: my-awesome-counter;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.1rem;
+  color: #0b0b0b;
+}
+
+.number-list li::before {
+  content: counter(my-awesome-counter);
+  background: #FF7F00;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.number-list strong {
+  color: #003366;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Operator Cards (Who We Cover) */
+.operator-card {
+  transition: all 0.3s ease;
+  border-color: #dee2e6;
+}
+
+.operator-card i {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+}
+
+.operator-card:hover {
+  border-color: #ff7200 !important;
+}
+
+/* Factor Cards (Cost Factors) */
+.factor-card {
+  transition: all 0.3s ease;
+  border-left: 4px solid #ff7200 !important;
+}
+
+.factor-card:hover {
+  background-color: #fff8f3 !important;
+}
+
+/* Common Problems Section */
+.problem-solution-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #efefef;
+  transition: transform 0.3s ease;
+}
+
+
+.problem-solution-item h5 {
+  color: #d9534f;
+  /* Problem color (Reddish) */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.problem-solution-item p {
+  margin-bottom: 0;
+  color: #0b0b0b;
+}
+
+.problem-solution-item .fa-check {
+  margin-right: 8px;
+}
+
+/* Process Section */
+.process-section .process-step {
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  background: white;
+  transition: transform 0.3s ease;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.process-section .process-step:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.process-section .step-icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 51, 102, 0.3);
+}
+
+.process-section h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* FAQ Icon */
+.faq-icon {
+  margin-right: 12px;
+  /* color: #ff7200; */
+}
+
+/* Second Iteration: Premium Tabs & Benefit Cards */
+.towtrk-tabs-container {
+  padding: 30px 0;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-card:hover {
+  /* transform: translateY(-8px); */
+  box-shadow: 0 15px 35px rgba(1, 52, 105, 0.1);
+  border-color: #013469;
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #013469 0%, #054a91 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(1, 52, 105, 0.2);
+}
+
+.benefit-card h4 {
+  color: #013469;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.benefit-limit {
+  background: #fff0e5;
+  /* Very light orange */
+  color: #ff7200;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.benefit-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.benefit-card ul li {
+  font-size: 16px;
+  color: #0b0b0b;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.benefit-card ul li::before {
+  content: '\f058';
+  /* FontAwesome check-circle */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-size: 0.9rem;
+}
+
+/* Redesigning the Switcher */
+.towtrk-tabs-container .nav-pills {
+  gap: 15px;
+  margin-bottom: 3rem !important;
+}
+
+.towtrk-tabs-container .nav-link {
+  background: #fff;
+  border: 2px solid #e1e9f5;
+  color: #013469;
+  padding: 16px 30px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);
+}
+
+.towtrk-tabs-container .nav-link:hover:not(.active) {
+  border-color: #ff7200;
+  color: #ff7200;
+  transform: scale(1.02);
+}
+
+.towtrk-tabs-container .nav-link.active {
+  background: #013469;
+  color: white;
+  border-color: #013469;
+  /* box-shadow: 0 10px 20px rgba(1, 52, 105, 0.2); */
+}
+
+.towtrk-tabs-container .nav-link.active i {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.tab-content {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@media (max-width: 991px) {
+  .towtrk-tabs-container .nav-pills {
+    gap: 10px;
+  }
+
+  .towtrk-tabs-container .nav-item {
+    width: 100%;
+  }
+
+  .towtrk-tabs-container .nav-link {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.border-orange-dashed {
+  border: 2px dashed #ff7200 !important;
+}
+
+.bg-orange {
+  background: linear-gradient(135deg, #ff7200 0%, #ff9540 100%) !important;
+  box-shadow: 0 4px 10px rgba(255, 114, 0, 0.3) !important;
+}
+
+/* Exclusion Cards */
+.exclusion-card {
+  background: #fff;
+  border: 1px solid #fceaea;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.03);
+}
+
+.exclusion-card:hover {
+  border-color: #dc3545;
+  background-color: #fff9f9;
+  transform: scale(1.03);
+}
+
+.exclusion-card i {
+  color: #dc3545;
+  font-size: 1.4rem;
+  min-width: 30px;
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+}
+
+.exclusion-card span {
+  font-size: 0.95rem;
+  color: #0b0b0b;
+  font-weight: 500;
+}
+
+.quick-summary-list li {
+  font-size: 16px;
+  color: #0b0b0b;
+  font-family: "Poppins";
+  line-height: 1.6;
+  display: flex !important;
+  align-items: center;
+}
+
+.quick-summary-list i {
+  font-size: 18px;
+  min-width: 25px;
+}
+
+.summary-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 114, 0, 0.1);
+  margin-bottom: 30px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.summary-card .quick-summary-list li {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+}
